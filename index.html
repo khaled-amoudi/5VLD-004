@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="dist/output.css" rel="stylesheet">
-    <title>Waves | sign in</title>
+    <title>Waves</title>
 </head>
 
-<body>
+<body class="selection:bg-teal-300 selection:bg-opacity-50 dark:bg-slate-900">
 
     <!-- Start Navbar -->
-    <div class="bg-gradient-to-r from-teal-800 to-teal-600">
+    <nav class="sticky top-0 z-50 bg-gradient-to-r from-teal-800 to-teal-600">
         <div class="px-4 py-3 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
             <div class="relative flex items-center justify-between">
                 <div class="flex items-center">
@@ -52,9 +52,10 @@
                             Sign up
                         </a>
                     </li>
+                    <img src="src/imgs/sun-2.png" class="mode-switch mode-img transition cursor-pointer" width="35px" height="35px" alt="">
                 </ul>
                 <!-- Mobile menu -->
-                <!-- <div class="lg:hidden">
+                <div class="lg:hidden">
                     <button aria-label="Open Menu" title="Open Menu"
                         class="p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline">
                         <svg class="w-5 text-gray-600" viewBox="0 0 24 24">
@@ -122,17 +123,16 @@
                             </nav>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
-    </div>
+    </nav>
     <!-- End Navbar -->
 
 
 
-
-    <section class="bg-white dark:bg-gray-800">
-        <div class="container px-6 py-20 mx-auto text-center">
+    <section class="bg-white dark:bg-slate-900">
+        <div class="container px-6 py-24 mx-auto text-center">
             <div class="absolute hidden md:block top-96 left-36">
                 <img src="src/imgs/shape-03.png" class="opacity-20" alt="">
             </div>
@@ -141,7 +141,7 @@
             </div>
             <div class="w-3/5 mx-auto">
                 <h1
-                    class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-800 to-teal-600 dark:text-white md:text-5xl">
+                    class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-800 to-teal-600 dark:from-teal-200 dark:to-white md:text-5xl">
                     Building Your Next App with our Awesome components</h1>
                 <p class="mt-6 text-gray-500 text-xl dark:text-gray-300">Lorem ipsum dolor sit, amet consectetur
                     adipisicing
@@ -158,9 +158,7 @@
     </section>
 
 
-
-
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white dark:bg-slate-900">
         <div class="container px-28 py-12 mx-auto">
             <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <div class="p-3 text-center">
@@ -238,8 +236,7 @@
     </section>
 
 
-
-    <section class="px-28 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-28 lg:py-20">
+    <section class="px-28 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-28 lg:py-20 dark:bg-slate-900">
         <div class="grid gap-10 lg:grid-cols-2">
             <div class="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
                 <div class="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-400">
@@ -257,11 +254,11 @@
                 </div>
                 <div class="max-w-xl mb-6">
                     <h2
-                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-700 sm:text-4xl sm:leading-none">
+                        class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-700 dark:text-gray-200 sm:text-4xl sm:leading-none">
                         Let us quick build your next app with our
-                        <span class="inline-block text-teal-600">components</span>
+                        <span class="inline-block text-teal-600 dark:hover\:text-teal-400">components</span>
                     </h2>
-                    <p class="text-base text-gray-700 md:text-lg">
+                    <p class="text-base text-gray-700 dark:text-gray-400 md:text-lg">
                         Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
                         laudantium, totam rem aperiam, eaque ipsa quae. explicabo.
                     </p>
@@ -281,23 +278,20 @@
             <div class="flex items-center justify-center -mx-4 lg:pl-8">
                 <div class="flex flex-col items-end px-3">
                     <img class="object-cover mb-6 rounded-lg shadow-lg h-28 sm:h-48 xl:h-56 w-28 sm:w-48 xl:w-56"
-                        src="src/imgs/natural-02.jpg"
-                        alt="" />
+                        src="src/imgs/natural-02.jpg" alt="" />
                     <img class="object-cover w-20 h-20 rounded-lg shadow-lg sm:h-32 xl:h-40 sm:w-32 xl:w-40"
-                    src="src/imgs/natural-03.jpg"
-                    alt="" />
+                        src="src/imgs/natural-03.jpg" alt="" />
                 </div>
                 <div class="px-3">
                     <img class="object-cover w-40 h-40 rounded-lg shadow-lg sm:h-64 xl:h-80 sm:w-64 xl:w-80"
-                    src="src/imgs/natural-04.jpg"
-                    alt="" />
+                        src="src/imgs/natural-04.jpg" alt="" />
                 </div>
             </div>
         </div>
     </section>
 
 
-    <section class="py-20">
+    <section class="py-20 bg-white dark:bg-slate-900">
         <div class="sliderAx h-auto">
             <div id="slider-1" class="container mx-auto">
                 <div class="bg-cover bg-tep shadow-lg h-auto text-white py-24 px-10 object-fill rounded-lg"
@@ -344,8 +338,7 @@
 
 
 
-    
-    <section class="py-16 bg-white overflow-hidden">
+    <section class="py-16 bg-white dark:bg-slate-900 overflow-hidden">
         <div class="container relative m-auto px-6 space-y-8 md:px-12 lg:px-20">
             <div class="absolute hidden md:block">
                 <img src="src/imgs/shape-01.png" class="rounded-full w-24 h-20 opacity-70 rotate-12" alt="">
@@ -354,66 +347,67 @@
                 <span
                     class="block w-max mx-auto py-3 px-5 rounded-full bg-teal-400 text-white text-sm font-semibold">Main
                     features</span>
-                <h2 class="mt-4 text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-teal-800 to-teal-600 font-bold md:text-4xl">A technology-first approach to
+                <h2
+                    class="mt-4 text-center text-2xl text-transparent bg-clip-text bg-gradient-to-r from-teal-800 to-teal-600 font-bold md:text-4xl dark:text-gray-200">
+                    A technology-first approach to
                     payments <br class="sm:block" hidden> and finance</h2>
             </div>
             <div class="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 md:-mx-8">
                 <div class="relative group">
                     <div aria-hidden="true"
-                        class="absolute inset-0 rounded-xl bg-white shadow-xl transition duration-300 group-hover:scale-105">
+                        class="absolute inset-0 rounded-xl bg-white dark:bg-slate-800 shadow-xl transition duration-300 group-hover:scale-105">
                     </div>
                     <div class="relative text-center space-y-4 p-6 md:p-8">
                         <img src="src/imgs/hamburger.png" class="w-16 m-auto" width="512" height="512"
                             alt="burger illustration">
-                        <h4 class="text-2xl text-teal-800 font-medium transition group-hover:text-teal-800">Close to
+                        <h4 class="text-2xl text-teal-800 dark:text-teal-400 font-medium transition group-hover:text-teal-600">Close to
                             the metal</h4>
-                        <p class="text-gray-600">Neque Dolor, alias quae, quibusdam accusantium, laudantium recusandae
+                        <p class="text-gray-600 dark:text-gray-200">Neque Dolor, alias quae, quibusdam accusantium, laudantium recusandae
                             tenetur fugiat non cum doloribus aperiam voluptates nostrum.</p>
                     </div>
                 </div>
                 <div class="relative group">
                     <div aria-hidden="true"
-                        class="absolute inset-0 rounded-xl bg-white shadow-xl transition duration-300 group-hover:scale-105">
+                        class="absolute inset-0 rounded-xl bg-white dark:bg-slate-800 shadow-xl transition duration-300 group-hover:scale-105">
                     </div>
                     <div class="relative text-center space-y-4 p-6 md:p-8">
                         <img src="src/imgs/folder.png" class="w-16 m-auto" width="512" height="512"
                             alt="package-delivery illustration">
-                        <h4 class="text-2xl text-teal-800 font-medium transition group-hover:text-teal-800">Close to
+                        <h4 class="text-2xl text-teal-800 dark:text-teal-400 font-medium transition group-hover:text-teal-600">Close to
                             the metal</h4>
-                        <p class="text-gray-600">Neque Dolor, alias quae, quibusdam accusantium, laudantium recusandae
+                        <p class="text-gray-600 dark:text-gray-200">Neque Dolor, alias quae, quibusdam accusantium, laudantium recusandae
                             tenetur fugiat non cum doloribus aperiam voluptates nostrum.</p>
                     </div>
                 </div>
                 <div class="relative group">
                     <div aria-hidden="true"
-                        class="absolute inset-0 rounded-xl bg-white shadow-xl transition duration-300 group-hover:scale-105">
+                        class="absolute inset-0 rounded-xl bg-white dark:bg-slate-800 shadow-xl transition duration-300 group-hover:scale-105">
                     </div>
                     <div class="relative text-center space-y-4 p-6 md:p-8">
                         <img src="src/imgs/rocket.png" class="w-16 m-auto" width="512" height="512"
                             alt="package-delivery illustration">
-                        <h4 class="text-2xl text-teal-800 font-medium transition group-hover:text-teal-800">Close to
+                        <h4 class="text-2xl text-teal-800 dark:text-teal-400 font-medium transition group-hover:text-teal-600">Close to
                             the metal</h4>
-                        <p class="text-gray-600">Neque Dolor, alias quae, quibusdam accusantium, laudantium recusandae
+                        <p class="text-gray-600 dark:text-gray-200">Neque Dolor, alias quae, quibusdam accusantium, laudantium recusandae
                             tenetur fugiat non cum doloribus aperiam voluptates nostrum.</p>
                     </div>
                 </div>
                 <div class="relative group lg:hidden">
                     <div aria-hidden="true"
-                        class="absolute inset-0 rounded-xl bg-white shadow-xl transition duration-300 group-hover:scale-105">
+                        class="absolute inset-0 rounded-xl bg-white dark:bg-slate-800 shadow-xl transition duration-300 group-hover:scale-105">
                     </div>
                     <div class="relative text-center space-y-4 p-6 md:p-8">
                         <img src="images/avatars/metal.png" class="w-20 -mt-2 mx-auto" width="512" height="512"
                             alt="package-delivery illustration">
-                        <h4 class="text-2xl text-teal-800 font-medium transition group-hover:text-teal-800">Close to
+                        <h4 class="text-2xl text-teal-800 dark:text-teal-400 font-medium transition group-hover:text-teal-600">Close to
                             the metal</h4>
-                        <p class="text-gray-600">Neque Dolor, alias quae, quibusdam accusantium, laudantium recusandae
+                        <p class="text-gray-600 dark:text-gray-200">Neque Dolor, alias quae, quibusdam accusantium, laudantium recusandae
                             tenetur fugiat non cum doloribus aperiam voluptates nostrum.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
 
 
 
@@ -545,7 +539,8 @@
             </div>
             <div class="flex flex-col justify-between pt-5 pb-10 border-t border-teal-200 sm:flex-row">
                 <p class="text-sm text-gray-100">
-                    © Copyright 2022 <a href="https://www.linkedin.com/in/khaled-amoudi-73768a195/" target="_blank" class="text-teal-300 font-bold">5VLD</a>. All rights reserved.
+                    © Copyright 2022 <a href="https://www.linkedin.com/in/khaled-amoudi-73768a195/" target="_blank"
+                        class="text-teal-300 font-bold">5VLD</a>. All rights reserved.
                 </p>
                 <div class="flex items-center mt-4 space-x-4 sm:mt-0">
                     <a href="/" class="transition-colors duration-300 text-teal-100 hover:text-white">
@@ -578,12 +573,8 @@
 
 
 
-
-
-
-
-
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="dist/script.js"></script>
     <script>
         var cont = 0;
         function loopSlider() {
